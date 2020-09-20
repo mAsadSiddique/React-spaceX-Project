@@ -10,6 +10,7 @@
     "graphql": "^15.3.0",
     "graphql-tag": "^2.11.0",
     "react": "^16.13.1",
+    "react-apollo": "^3.1.5",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3"
   },
@@ -36,9 +37,9 @@
     ]
   },
   "devDependencies": {
-    "@graphql-codegen/cli": "1.17.8",
+    "@graphql-codegen/cli": "^1.17.8",
+    "@graphql-codegen/typescript": "^1.17.8",
     "@graphql-codegen/typescript-operations": "1.17.8",
-    "@graphql-codegen/typescript": "1.17.8",
-    "@graphql-codegen/typescript-react-apollo": "1.17.8"
+    "@graphql-codegen/typescript-react-apollo": "^2.0.6"
   }
 }
