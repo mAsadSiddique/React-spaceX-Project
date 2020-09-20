@@ -3,7 +3,12 @@ import { useMissionsInfoQuery } from '../../generated/graphql';
 import { from } from '@apollo/client'
 import MissionList from './MissionList';
 
-function MissionContainer() {
+
+interface setName {
+    setId: any
+}
+
+function MissionContainer({ setId }: any) {
 
     const { data, error, loading } = useMissionsInfoQuery();
 
@@ -19,7 +24,8 @@ function MissionContainer() {
         <div>
             <h3>Missions</h3>
             <MissionList
-                data={data} />
+                data={data}
+                setId={setId} />
         </div>
     )
 }
