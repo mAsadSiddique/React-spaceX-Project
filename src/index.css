@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.mission-list{
+  list-style-type: none;
+}
+
+
+.btn{
+  margin-top: 5px;
+}
+
+.mission-details{
+  padding: 10px;
+  margin-left: 20%;
+}
+
+.mission-name{
+  font-size: 2em;
+  border-bottom: 1px solid lightgray;
+}
+
+.mission-year{
+  padding: 10px 5px;
+  display: flex;
+}
+
+.mission-launched{
+  display: flex;
+  padding: 10px 5px;
+}
+.img{
+  width: 200px;
+  height: 250px;
+  padding: 20px;
+}

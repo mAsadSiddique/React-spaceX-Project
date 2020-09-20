@@ -1,10 +1,15 @@
 import React from 'react';
-import { useLaunchProfileQuery } from '../../generated/graphql';
+import { useLaunchProfileQuery, Mission } from '../../generated/graphql';
 import MissionInfo from './MissionInfo';
 
-function MissionInfoContainer() {
+interface Props {
+    Id: String,
+}
+
+const MissionInfoContainer: React.FC<Props> = (Id : any) => {
+    console.log("ID", Id)
     const { data, loading, error } = useLaunchProfileQuery({
-        variables: { id: '25' },
+        variables: { id: Id.id },
     });
 
     if (loading)
@@ -13,13 +18,14 @@ function MissionInfoContainer() {
     if (error || !data)
         return <h2>Error 404</h2>
 
-    console.log(data)
+
 
     return (
         <div>
             <h3>Mission Info</h3>
             <MissionInfo
-                data={data} />
+                data={data}
+            />
         </div>
     )
 }
