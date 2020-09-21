@@ -22,7 +22,6 @@ function MissionContainer({ setId }: any) {
 
     return (
         <div>
-            <h3>Missions</h3>
             <MissionList
                 data={data}
                 setId={setId} />

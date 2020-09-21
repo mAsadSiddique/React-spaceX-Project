@@ -1,6 +1,6 @@
 import React from 'react'
 import { LaunchProfileQuery } from '../../generated/graphql';
-
+import Image from 'react-bootstrap/Image'
 interface Props {
     data: LaunchProfileQuery
 }
@@ -16,34 +16,55 @@ const MissionInfo: React.FC<Props> = ({ data }) => {
                         data.launch?.mission_name
                     }
                 </span>
+                <span className="launch-site">
+                    <strong>
+                        {
+                            data.launch?.launch_site?.__typename
+                        }
+                    </strong>
+                    <strong >
+                        {
+                            data.launch?.launch_site?.site_name
+                        }
+                    </strong>
+                </span>
                 <span className="mission-year">
-                    Mission Year {data.launch?.launch_year}
+                    <strong>
+                        Mission Year
+                </strong>
+                    <strong>
+                        {data.launch?.launch_year}
+                    </strong>
                 </span>
 
                 <span className="mission-launched">
-                    <p>This Mission
-                        <strong> {data.launch?.launch_success ? "Successfully Launched" : "get Failed"}
-                        </strong>
-                    </p>
+                    <strong>
+                        This Mission
+                </strong>
+                    <strong>
+                        {data.launch?.launch_success ? "Successfully Launched" : "get Failed"}
+                    </strong>
                 </span>
 
-                <span>
+                <span className="img-container">
+                    <h4>These Pics are taken during Launching</h4>
                     {data.launch?.links?.flickr_images?.map((img, ind) => {
 
                         return (
-                            <img
+
+                            <Image
                                 className="img"
-                                key={ind}
                                 src={img?.toString()}
-                                alt="Mission Pics"
-                            />
+                                alt="img"
+                                fluid />
+
                         )
                     })}
                 </span>
             </div>
 
 
-        </div>
+        </div >
     )
 }
 

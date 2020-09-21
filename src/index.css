@@ -1,4 +1,5 @@
 body {
+  background-color: #fbfdeef6;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -12,36 +13,87 @@ code {
     monospace;
 }
 
-.mission-list{
-  list-style-type: none;
-}
 
-
-.btn{
-  margin-top: 5px;
-}
 
 .mission-details{
-  padding: 10px;
+  padding:  10px;
   margin-left: 20%;
 }
 
 .mission-name{
-  font-size: 2em;
+  color: #111;
+  margin-left: 80px;
+  font-size: 100px;
   border-bottom: 1px solid lightgray;
 }
 
+.mission-name:hover{
+  border-bottom: 1px solid rgb(211, 100, 100);
+}
+
 .mission-year{
-  padding: 10px 5px;
   display: flex;
+  justify-content: space-between;
+  margin-right: 100px;
+  padding: 5px 0px;
 }
 
 .mission-launched{
   display: flex;
-  padding: 10px 5px;
+  justify-content: space-between;
+  margin-right: 100px;
+  padding: 5px 0px;
 }
+
+.launch-site {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 100px;
+
+}
+
+.img-container > h4{
+  color: #111;
+  margin-top: 20px;
+  text-align: center;
+  padding-bottom: 5px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.img-container > h4:hover{
+  border-bottom: 1px solid rgb(211, 100, 100);
+}
+
+
 .img{
-  width: 200px;
-  height: 250px;
+  width: 270px;
+  height: 300px;
   padding: 20px;
+}
+
+
+
+/* ////////////////////////////////////////////////////////// */
+
+.mission-list{
+  margin: 0px;
+  list-style-type: none;
+  min-width: 300px;
+  /* border: 1px solid black; */
+}
+
+.mission-list > h3 > li{
+  margin: 0px;
+}
+
+.mission-list > h3{
+  width: 100%;
+  text-align: center;
+  border-bottom: 1 px solid black;
+}
+
+
+.btn{
+  width: 100%;
+  border: 1px solid black;
 }

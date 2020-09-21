@@ -22,7 +22,6 @@ const MissionInfoContainer: React.FC<Props> = (Id : any) => {
 
     return (
         <div>
-            <h3>Mission Info</h3>
             <MissionInfo
                 data={data}
             />
