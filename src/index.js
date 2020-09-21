@@ -12,9 +12,15 @@ const client = new ApolloClient({
 });
 
 ReactDOM.render(
+<<<<<<< HEAD
   <ApolloProvider client={client}>
     <App />
   </ApolloProvider>,
+=======
+    <ApolloProvider client={client}>
+      <App />
+    </ApolloProvider>,
+>>>>>>> 43963624240d01ed8debb170aa5960a947b7f250
   document.getElementById('root')
 );
 
