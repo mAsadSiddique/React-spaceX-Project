@@ -7,7 +7,7 @@ interface Props {
 }
 
 const MissionInfoContainer: React.FC<Props> = (Id : any) => {
-    console.log("ID", Id)
+    // console.log("ID", Id)
     const { data, loading, error } = useLaunchProfileQuery({
         variables: { id: Id.id },
     });

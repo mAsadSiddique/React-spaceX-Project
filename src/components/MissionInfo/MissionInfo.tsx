@@ -48,18 +48,21 @@ const MissionInfo: React.FC<Props> = ({ data }) => {
 
                 <span className="img-container">
                     <h4>These Pics are taken during Launching</h4>
-                    {data.launch?.links?.flickr_images?.map((img, ind) => {
+                    {data.launch?.links?.flickr_images?.length !== 0 ?
+                        data.launch?.links?.flickr_images?.map((img, ind) => {
 
-                        return (
+                            return (
 
-                            <Image
-                                className="img"
-                                src={img?.toString()}
-                                alt="img"
-                                fluid />
+                                <Image
+                                    className="img"
+                                    src={img?.toString()}
+                                    alt="img"
+                                    fluid />
 
-                        )
-                    })}
+                            )
+                        }) :
+                        <h1>Images Not Available</h1>
+                    }
                 </span>
             </div>
 

@@ -7,6 +7,7 @@ interface Props {
 }
 
 const MissionList: React.FC<Props> = ({ data, setId }) => {
+
     return (
         <div>
             <ul className="mission-list">
