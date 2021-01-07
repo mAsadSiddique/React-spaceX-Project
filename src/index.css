@@ -140,11 +140,11 @@ code {
 
 /* ////////////////////////////////////////////////////////// */
 
+
 .mission-list{
   margin: 0px;
   list-style-type: none;
   min-width: 300px;
-  border-right: 13px solid black;
   /* border: 1px solid black; */
 }
 

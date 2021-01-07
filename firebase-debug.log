@@ -1,0 +1,33 @@
+[debug] [2021-01-07T16:31:08.021Z] ----------------------------------------------------------------------
+[debug] [2021-01-07T16:31:08.024Z] Command:       /usr/local/bin/firebase /home/asad/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2021-01-07T16:31:08.024Z] CLI Version:   8.18.0
+[debug] [2021-01-07T16:31:08.024Z] Platform:      linux
+[debug] [2021-01-07T16:31:08.024Z] Node Version:  v12.18.1
+[debug] [2021-01-07T16:31:08.033Z] Time:          Thu Jan 07 2021 21:31:08 GMT+0500 (Pakistan Standard Time)
+[debug] [2021-01-07T16:31:08.033Z] ----------------------------------------------------------------------
+[debug] [2021-01-07T16:31:08.033Z] 
+[debug] [2021-01-07T16:31:08.035Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-01-07T16:31:08.055Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-07T16:31:08.055Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/asad/Documents/GitHub/BootCamp_Projects/space-x
+
+[debug] [2021-01-07T16:31:09.295Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2021-01-07T16:31:09.295Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2021-01-07T17:05:47.734Z] TypeError: Cannot read property 'setRawMode' of null
+    at ReadStream.setRawMode (tty.js:75:28)
+    at Interface._setRawMode (readline.js:290:16)
+    at Interface.close (readline.js:413:10)
+    at ReadStream.ontermend (readline.js:201:10)
+    at ReadStream.emit (events.js:327:22)
+    at ReadStream.EventEmitter.emit (domain.js:482:12)
+    at endReadableNT (_stream_readable.js:1221:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)

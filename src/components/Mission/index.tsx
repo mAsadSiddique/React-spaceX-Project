@@ -34,6 +34,7 @@ function MissionContainer({ setId }: any) {
     console.log(data)
 
     return (
+
         <div>
             <MissionList
                 data={data}
